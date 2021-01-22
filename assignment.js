@@ -50,3 +50,22 @@ function hotelCost(dayCount) {
 
 var getHotelCost = hotelCost(21);
 console.log(getHotelCost);
+
+
+// megaFriend
+
+function megaFriend(friendsName) {
+    var longestName = '';
+    for (var i = 0; i < friendsName.length; i++) {
+        if (longestName.length < friendsName[i].length) {
+            longestName = friendsName[i];
+        }
+    }
+    return longestName;
+}
+var getMegaFriend = megaFriend([
+    'Mst.Hosney Emama Akhter Banu',
+    'Mk Tuli',
+    'Md.Farhan Shahriyar',
+]);
+console.log(getMegaFriend);
