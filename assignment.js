@@ -24,3 +24,29 @@ function budgetCalculator(watch,phone,laptop) {
 
 var budgetResult = budgetCalculator(1,2,3);
 console.log(budgetResult);
+
+
+// hotelCost 
+
+function hotelCost(dayCount) {
+    var totalPrice = 0;
+    if (dayCount <= 10) {
+        totalPrice = dayCount * 100;
+    }
+    else if(dayCount <= 20) {
+        var firstStayPrice = 10 * 100;
+        var secondStay = dayCount -10;
+        var secondStayPrice = secondStay * 80;
+        var totalPrice = firstStayPrice + secondStayPrice;
+    }else {
+        var firstStayPrice = 10 * 100;
+        var secondStayPrice = 10 * 80;
+        var thirdStay = dayCount - 20;
+        var thirdStayPrice = thirdStay * 50;
+        var totalPrice = firstStayPrice + secondStayPrice + thirdStayPrice;
+    }
+    return totalPrice;
+}
+
+var getHotelCost = hotelCost(21);
+console.log(getHotelCost);
