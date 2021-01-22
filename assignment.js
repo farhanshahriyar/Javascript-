@@ -14,10 +14,10 @@ console.log(resultMeter);
 
 // budgetCalculator 
 
-function budgetCalculator(watch, phone, laptop) {
-    var watchPrice = watch * 250;
-    var phonePrice = phone * 24500;
-    var laptopPrice = laptop * 600000;
+function budgetCalculator(watch,phone,laptop) {
+    var watchPrice = watch * 50;
+    var phonePrice = phone * 100;
+    var laptopPrice = laptop * 500;
     var getTotalPrice = watchPrice + phonePrice + laptopPrice;
     return getTotalPrice;
 }
